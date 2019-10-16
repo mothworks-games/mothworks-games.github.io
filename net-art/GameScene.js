@@ -8,7 +8,7 @@ class GameScene extends Phaser.Scene {
 		
 		//Creates the background room
 		this.background = this.add.image(config.width / 2, config.height / 2, "room");
-		this.background.setDisplaySize(config.width, config.height);
+		//this.background.setDisplaySize(config.width, config.height);
 		
 		//Creates the player image
 		this.player = this.add.sprite(config.width / 2, config.height / 2, "player");
@@ -17,7 +17,8 @@ class GameScene extends Phaser.Scene {
 		
 		this.cursorKeys = this.input.keyboard.createCursorKeys();
 		
-		
+		var camera = this.cameras.main.setZoom(this.scale);
+
 		/*
 		this.add.text(20, 20, "Finished Loading", {
 			font: "25px Arial",
