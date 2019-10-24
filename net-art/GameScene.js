@@ -34,16 +34,16 @@ class GameScene extends Phaser.Scene {
 	
 	movePlayerManager(){
 		if(this.cursorKeys.left.isDown){
-			this.player.x -= speed;
+			this.player.x -= this.speed;
 			this.player.play("playerLeft_anim");
 		} if(this.cursorKeys.right.isDown){
-			this.player.x += speed;
+			this.player.x += this.speed;
 			this.player.play("playerRight_anim");
 		} if(this.cursorKeys.up.isDown){
-			this.player.y -= speed;
+			this.player.y -= this.speed;
 			this.player.play("playerUp_anim");
 		} if(this.cursorKeys.down.isDown){
-			this.player.y += speed;
+			this.player.y += this.speed;
 			this.player.play("playerDown_anim");
 		}
 	}
