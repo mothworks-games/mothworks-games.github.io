@@ -5,6 +5,7 @@ class GameScene extends Phaser.Scene {
 	
 	create(){
 		this.scale = 4;
+		this.speed = 2;
 		
 		//Creates the background room
 		this.background = this.add.image(config.width / 2, config.height / 2, "room");
@@ -33,16 +34,16 @@ class GameScene extends Phaser.Scene {
 	
 	movePlayerManager(){
 		if(this.cursorKeys.left.isDown){
-			this.player.x -= 1;
+			this.player.x -= speed;
 			this.player.play("playerLeft_anim");
 		} if(this.cursorKeys.right.isDown){
-			this.player.x += 1;
+			this.player.x += speed;
 			this.player.play("playerRight_anim");
 		} if(this.cursorKeys.up.isDown){
-			this.player.y -= 1;
+			this.player.y -= speed;
 			this.player.play("playerUp_anim");
 		} if(this.cursorKeys.down.isDown){
-			this.player.y += 1;
+			this.player.y += speed;
 			this.player.play("playerDown_anim");
 		}
 	}
