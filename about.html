@@ -4,67 +4,40 @@
 	<title>About - Moth-Labs</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	
-	<div class = "container-fluid">
-		<h1 class = "text-center">Moth-Labs Portfolio</h1>
-	</div>
-	
-	<!-- Navigation Bar -->
-	<div class = "container-fluid border-bottom">
-	
-		<ul class = "nav justify-content-center">
-			<li class = "nav-item">
-				<a class = "nav-link" href = "index.html"> Home </a>
-			</li>
-			<li class = "nav-item">
-				<a class = "nav-link" href = "about.html"> About </a>
-			</li>
-			<li class = "nav-item dropdown">
-				<a class = "nav-link dropdown-toggle" data-toggle = "dropdown" href = "#"> Projects </a>
-				<div class = "dropdown-menu">
-					<a class = "dropdown-item" href = "hypermoth.html"> Hyperspace Moth </a>
-					<a class = "dropdown-item" href = "cyberspace.html"> Cyberspace </a>
-					<a class = "dropdown-item" href = "digital-boom.html"> Digital Boom </a>
-					<a class = "dropdown-item" href = "loss-of-waldo.html"> Loss of Waldo </a>
-					<a class = "dropdown-item" href = "web-navi.html"> Web-Navi </a>
-					<a class = "dropdown-item" href = "read-only.html"> Read Only</a>
-					<a class = "dropdown-item" href = "small-knight.html"> Knight Print </a>
-					<a class = "dropdown-item" href = "lost-in-translation.html"> Lost in Translation </a>
-				</div>
-			</li>
-		</ul>
-		
-	</div>
-	
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 	
-	<div class = "mx-5 mt-3 row">
-		
-		<!--Image-->
-		<div class = "col-sm-3 col-xl-4">
-			<img src = "./images/sparkles.gif" alt = " " class = "container-fluid">
-		</div>
-		
-		<div class = "col-sm-4">
-			<img src = "./images/sax-noises.png" alt = "'Tis I" class = "container-fluid">
-		</div>
-		
-		<div class = "col-sm-3 col-xl-4">
-			<img src = "./images/sparkles.gif" alt = " " class = "container-fluid">
+	<div id = "NavBar">
+		<a href = "index.html">
+			<img src ="images/siteUtil/home.png" title = "Home" alt = "Home">
+		</a>
+		<a href = "about.html"> 
+			<img src = "images/siteUtil/about.png" title = "About" alt = "About">
+		</a>
+		<div class = "dropdown">
+			<button class = "dropbtn"> Projects </button>
+			<div class = "dropdown-content">
+				<a href = "hypermoth.html"> Hyperspace Moth </a>
+				<a href = "cyberspace.html"> Cyberspace </a>
+				<a href = "digital-boom.html"> Digital Boom </a>
+				<a href = "web-navi.html"> Web-Navi </a>
+				<a href = "read-only.html"> Read Only</a>
+				<a href = "lost-in-translation.html"> Lost in Translation </a>
+			</div>
 		</div>
 	</div>
 	
-	<!--Title and Description-->
-	<div class = "mx-5 mt-3 card">
-		<div class = "card-body">
-			My name is Thaddeus. I'm an aspiring game designer that does a bit of art and writing on the side. Most of my pieces don't really have much meaning behind them, but I like how they look.
-		</div>
+	
+	<div id=content>
+		<h1 style = "font-size: 3em">
+		About the Artist
+		</h1>
+		<img src = "./images/bio_page.png" alt = "A rare productive day.">
+		<p>My name is Thaddeus and I am an artist as well as a storyteller. I spend a lot of free time putting together stories and settings to use for one thing or another. Some find their way into my work, others sit as something planned for the future. I use art, most notably digital art, as a medium to share these stories in as many ways as I can. Be it through conveying personality in the character design or giving history to settings themselves that can be seen.</p>
+		<p>When I'm not attempting to make a narrative to share with others, I'm playing with the tools available to me to make something I can only describe as parody. I'm very playful in my work, not wanting to focus on the nitty gritty details of life and societal turmoil that we absorb enough through media every day. There may be a few moments where I touch on a social issue, but for the most part the more serious works are about my personal musings on life.</p>
+		<p>At the end of the day however, I want to get people to think when they look past the cartoon eyes and begin to look at the bits of symbolism.</p>
 	</div>
 </body>
 </html> 
